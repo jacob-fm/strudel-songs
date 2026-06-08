@@ -15,12 +15,12 @@ const piano = stack(
 ).color("green").slow(2).note().sound("piano").delay("0.6:1/12")
 const kick = s("<bd [bd - - bd ]> <- [ - bd]>").color("purple").bank("alesishr16")
 const hats = s("hh!4 - hh!3").color("white").bank("dr220").gain("<0.18@3 0.3>*8").pan("[ 0.8 0.2 ]*2").lpf(10000)
-const percLoop = n("< 1 <2 2*2> 4 3 >*8").color("orange").s("perc").bank("alesishr16").gain(0.4).pan("< 0.1 0.9 >*2")
+const percLoop = n("< 1 <2 2*2> 4 3 >*8").color("orange").s("perc").bank("alesishr16").gain(0.2).pan("< 0.1 0.9 >*2")
 
 $: stack(
 	arrange([16, sax]),
 	arrange([4, silence], [28, triangleHit], [8, silence], [16, triangleHit]),
-	arrange([8, silence], [8, piano], [4, silence], [8, piano]),
+	arrange([8, silence], [8, piano], [2, silence], [14, piano]),
 	arrange([16, silence], [16, kick]),
 	arrange([16, silence], [16, hats], [16, silence], [12, hats]),
 	arrange([24, silence], [8, percLoop]),
