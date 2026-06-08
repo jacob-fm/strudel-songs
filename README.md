@@ -2,4 +2,4 @@
 
 Hoping to store compositions I make with
 
-Hoping to use this to house compositions made with ttps://strudel.cc/.
+Hoping to use this to house compositions made with [Strudel](https://strudel.cc/).
